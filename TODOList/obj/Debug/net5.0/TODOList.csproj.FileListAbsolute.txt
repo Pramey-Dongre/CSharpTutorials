@@ -1,0 +1,16 @@
+D:\C#tuts\gamer\TODOList\bin\Debug\net5.0\TODOList.exe
+D:\C#tuts\gamer\TODOList\bin\Debug\net5.0\TODOList.deps.json
+D:\C#tuts\gamer\TODOList\bin\Debug\net5.0\TODOList.runtimeconfig.json
+D:\C#tuts\gamer\TODOList\bin\Debug\net5.0\TODOList.runtimeconfig.dev.json
+D:\C#tuts\gamer\TODOList\bin\Debug\net5.0\TODOList.dll
+D:\C#tuts\gamer\TODOList\bin\Debug\net5.0\ref\TODOList.dll
+D:\C#tuts\gamer\TODOList\bin\Debug\net5.0\TODOList.pdb
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.csproj.AssemblyReference.cache
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.AssemblyInfoInputs.cache
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.AssemblyInfo.cs
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.csproj.CoreCompileInputs.cache
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.dll
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\ref\TODOList.dll
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.pdb
+D:\C#tuts\gamer\TODOList\obj\Debug\net5.0\TODOList.genruntimeconfig.cache
