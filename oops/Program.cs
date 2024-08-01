@@ -14,10 +14,12 @@ namespace oops
             ParallelSide_2 = p2;
             Height = h;
         }
-
-        public double CalculateArea()
+    }
+    class ShapesMeasurementsCalculator
+    {
+        public double CalculateTrapeziumArea(Trapezium trapezium)
         {
-            return 0.5 * (ParallelSide_1 + ParallelSide_2) * Height;
+            return 0.5 * (trapezium.ParallelSide_1 + trapezium.ParallelSide_2) * trapezium.Height;
         }
     }
 
@@ -25,11 +27,12 @@ namespace oops
     {
         static void Main(string[] args)
         {
-            var trapezium = new Trapezium(6,9,17);
+            var trapezium = new Trapezium(19, 11, 17);
+            var calculator = new ShapesMeasurementsCalculator();
             Console.WriteLine(trapezium.ParallelSide_1);
             Console.WriteLine(trapezium.ParallelSide_2);
             Console.WriteLine(trapezium.Height);
-            Console.WriteLine(trapezium.CalculateArea());
+            Console.WriteLine(calculator.CalculateTrapeziumArea(trapezium));
         }
     }
 }
