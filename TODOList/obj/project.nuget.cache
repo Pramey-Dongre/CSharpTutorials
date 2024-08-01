@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "jEE5EfDLpBS8VWdfng4iQrFq973hrw92zFT2XnZIU/Y08CmFO37c37wWdMs8XkLRTL2RMAZOw3AGHbwLxFbEAg==",
+  "dgSpecHash": "Q1YyJkidYfkGWlsuDCiPVV5YqgT3kNMUWKSuGqFCgCmB88W8xNPQyl1XpuQ9c0PkApTV6X64V7IvbpMi5OLehQ==",
   "success": true,
-  "projectFilePath": "D:\\C#tuts\\gamer\\TODOList\\TODOList.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\Training\\CSharpTutorials\\TODOList\\TODOList.csproj",
+  "expectedPackageFiles": [
+    "C:\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

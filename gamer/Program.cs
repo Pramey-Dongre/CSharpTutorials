@@ -20,18 +20,18 @@ namespace gamer
             number1 = t;
             Console.WriteLine("the product is: " + (number1 * number2));
             Console.WriteLine("the division is: " + ((double)number1 / number2));
-            //var userChoice = Console.ReadLine();
-            //bool isUserInputAbc = userChoice == "ABC";
-            //if (isLengthGreaterThan7(userChoice))
-            //{
-            //    PrintThalaStyle("Bole jo koyal");
-            //}
-            //else
-            //{
-            //    PrintThalaStyle("Not thala certified: "+ userChoice);
-            //}
-            //int result = Add(60, 9);
-            //Console.WriteLine("result is: "+result);
+            var userChoice = Console.ReadLine();
+            bool isUserInputAbc = userChoice == "ABC";
+            if (isLengthGreaterThan7(userChoice))
+            {
+                PrintThalaStyle("Bole jo koyal");
+            }
+            else
+            {
+                PrintThalaStyle("Not thala certified: " + userChoice);
+            }
+            int result = Add(60, 9);
+            Console.WriteLine("result is: " + result);
             Console.ReadKey();
         }
         static void PrintThalaStyle(string message)

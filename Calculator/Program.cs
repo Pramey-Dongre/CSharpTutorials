@@ -48,13 +48,20 @@ namespace Calculator
             //        Console.WriteLine("Not able to Parse");
             //    }
             //} while (!isParsingSuccessfull);
-            var myBday = new DateTime(2000, 11, 9);
-            Console.WriteLine(myBday.DayOfWeek);
-            var myNextBday = myBday.AddYears(24);
-            Console.WriteLine(myNextBday.DayOfWeek);
-            Console.WriteLine(myNextBday.Year);
-            Console.WriteLine(myNextBday.Month);
-            Console.WriteLine(myNextBday.Day);
+
+            //DateTime Revison
+            var olympics2024 = new DateTime(2024, 8, 1);
+            Console.WriteLine(olympics2024.Year);
+            Console.WriteLine(olympics2024.DayOfWeek);
+            var olympics2028 = olympics2024.AddYears(4);
+            Console.WriteLine(olympics2028.DayOfWeek);
+            //var myBday = new DateTime(2000, 11, 9);
+            //Console.WriteLine(myBday.DayOfWeek);
+            //var myNextBday = myBday.AddYears(24);
+            //Console.WriteLine(myNextBday.DayOfWeek);
+            //Console.WriteLine(myNextBday.Year);
+            //Console.WriteLine(myNextBday.Month);
+            //Console.WriteLine(myNextBday.Day);
 
             //var words = new List<string>
             //{ 

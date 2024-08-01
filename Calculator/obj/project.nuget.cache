@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9wY1lUZOAMf3h7nlg8LmdY3W0hgX3lQMSgAVf1ulMVAfCjzy1B7DfyjKxEh4sVuOX4D39y86LzPRe+G4CxzdTw==",
+  "dgSpecHash": "p5f5lbJXw3qq6wrn+nZm4z95/8WLxSjBpJhjyWbd4bawlL7kj3kOxPmOTCMtl2J4GSMATfuYHwsIL4wsEjMRaQ==",
   "success": true,
-  "projectFilePath": "D:\\C#tuts\\gamer\\Calculator\\Calculator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\Training\\CSharpTutorials\\Calculator\\Calculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
