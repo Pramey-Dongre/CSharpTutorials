@@ -4,26 +4,62 @@ namespace oops
 {
     class Trapezium
     {
-        public int ParallelSide_1;
-        public int ParallelSide_2;
-        public int Height;
+        readonly int Yehaireadonly;
+        const int YehaireadonlyConst =69;
+        public readonly int ParallelSide_1;
+        private int _height;
 
-        public Trapezium():
-            this(-5,10,13)
-        {
-        }
+        //public Trapezium():
+        //    this(-5,10,13)
+        //{
+        //}
 
         public Trapezium(int p1, int p2, int h)
         {
-            ParallelSide_1 = p1;
-            ParallelSide_2 = p2;
-            Height = h;
+            Yehaireadonly = 7;
+            ParallelSide_1 = GetLengthOrDefault(p1, nameof(ParallelSide_1));
+            //width = GetLengthOrDefault(p2, nameof(Width));
+            Width = p2;
+            _height = GetLengthOrDefault(h, nameof(_height));
         }
+        public int GetHeight() => _height;
+        
+        public void SetHeight(int val)
+        {
+            if (val > 0)
+            {
+                _height = val;
+            }
+        }
+        private int GetLengthOrDefault(int num,string name)
+        {
+            int defaultValueIfNonPositive = 1;
+            if (num <= 0)
+            {
+                Console.WriteLine($"{name} must be grater than 0");
+                return defaultValueIfNonPositive;
+            }
+            return num;
+        }
+        public int Width { get; private set; }
+        //private int _width;
+        //public int Width
+        //{
+        //    get
+        //    {
+        //        return _width;
+        //    }
+        //    private set
+        //    {
+        //        if(value > 0)
+        //        _width = value;
 
+        //    }
+        //}
     }
     class ShapesMeasurementsCalculator
     {
-        public double CalculateTrapeziumArea(Trapezium trapezium) => 0.5 * (trapezium.ParallelSide_1 + trapezium.ParallelSide_2) * trapezium.Height;
+        public double CalculateTrapeziumArea(Trapezium trapezium) => 0.5 * (trapezium.ParallelSide_1 + trapezium.Width) * trapezium.GetHeight();
         
     }
 
@@ -31,13 +67,16 @@ namespace oops
     {
         static void Main(string[] args)
         {
-            //var trapezium = new Trapezium(19, 11, 17);
-            var trapezium = new Trapezium();
+            var trapezium = new Trapezium(19, 11,0);
+            trapezium.SetHeight(17);
+            //var trapezium = new Trapezium();
             var calculator = new ShapesMeasurementsCalculator();
             Console.WriteLine(trapezium.ParallelSide_1);
-            Console.WriteLine(trapezium.ParallelSide_2);
-            Console.WriteLine(trapezium.Height);
+            Console.WriteLine(trapezium.Width);
+            Console.WriteLine(trapezium.GetHeight());
             Console.WriteLine(calculator.CalculateTrapeziumArea(trapezium));
+            DateTime aaj = DateTime.Now;
+            Console.WriteLine(aaj.Year);
         }
     }
 }
