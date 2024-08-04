@@ -77,6 +77,18 @@ namespace oops
             Console.WriteLine(calculator.CalculateTrapeziumArea(trapezium));
             DateTime aaj = DateTime.Now;
             Console.WriteLine(aaj.Year);
+            Person person = new Person("Joker")
+            {
+                YearOfBirth = 2000
+            };
+            //var person = new /*Person*/
+            //{
+            //    Name = "sdvv",
+            //    YearOfBirth = 334
+            //};
+            Console.WriteLine(person.YearOfBirth);
+            Console.WriteLine(person.Name);
         }
     }
 }
+
