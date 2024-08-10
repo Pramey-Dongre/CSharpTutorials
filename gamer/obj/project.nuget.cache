@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "0pYNpNQkTvY=",
   "success": true,
   "projectFilePath": "F:\\Training\\CSharpTutorials\\gamer\\gamer.csproj",
@@ -9,5 +10,11 @@
     "C:\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "yRuEg35CmjBtBO6FoKqZiOp3CjOTDmoOQnqqT8dZcFiLUmsIZHDWv9M2jMAPfuj0HqD36xdVnaZrve5GUwmYew==",
+  "success": true,
+  "projectFilePath": "D:\\C#tuts\\gamer\\gamer\\gamer.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> Stashed changes
   "logs": []
 }

@@ -13,7 +13,6 @@ D:\C#tuts\gamer\Calculator\obj\Debug\net5.0\Calculator.dll
 D:\C#tuts\gamer\Calculator\obj\Debug\net5.0\ref\Calculator.dll
 D:\C#tuts\gamer\Calculator\obj\Debug\net5.0\Calculator.pdb
 D:\C#tuts\gamer\Calculator\obj\Debug\net5.0\Calculator.genruntimeconfig.cache
-D:\C#tuts\gamer\Calculator\obj\Debug\net5.0\Calculator.csproj.AssemblyReference.cache
 F:\Training\CSharpTutorials\Calculator\bin\Debug\net5.0\Calculator.exe
 F:\Training\CSharpTutorials\Calculator\bin\Debug\net5.0\Calculator.deps.json
 F:\Training\CSharpTutorials\Calculator\bin\Debug\net5.0\Calculator.runtimeconfig.json

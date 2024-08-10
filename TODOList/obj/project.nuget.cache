@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "inf9Lu7MhkA=",
   "success": true,
   "projectFilePath": "F:\\Training\\CSharpTutorials\\TODOList\\TODOList.csproj",
@@ -9,5 +10,11 @@
     "C:\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "jEE5EfDLpBS8VWdfng4iQrFq973hrw92zFT2XnZIU/Y08CmFO37c37wWdMs8XkLRTL2RMAZOw3AGHbwLxFbEAg==",
+  "success": true,
+  "projectFilePath": "D:\\C#tuts\\gamer\\TODOList\\TODOList.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> Stashed changes
   "logs": []
 }
