@@ -8,23 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\prame\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\.nuget\\packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#tuts\\gamer\\gamer\\gamer.csproj",
+      "projectUniqueName": "F:\\Training\\CSharpTutorials\\gamer\\gamer.csproj",
       "projectName": "gamer",
-      "projectPath": "D:\\C#tuts\\gamer\\gamer\\gamer.csproj",
-      "packagesPath": "C:\\Users\\prame\\.nuget\\packages\\",
-      "outputPath": "D:\\C#tuts\\gamer\\gamer\\obj\\",
+      "projectPath": "F:\\Training\\CSharpTutorials\\gamer\\gamer.csproj",
+      "packagesPath": "C:\\.nuget\\packages",
+      "outputPath": "F:\\Training\\CSharpTutorials\\gamer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\prame\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pdongre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +35,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://artifactory.ubisoft.org/api/nuget/nuget/": {},
+        "https://artifactory.ubisoft.org/artifactory/api/nuget/jd-nuget-federated": {}
       },
       "frameworks": {
         "net5.0": {
@@ -89,7 +92,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

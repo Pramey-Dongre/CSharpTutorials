@@ -8,12 +8,12 @@ namespace oops
         const int YehaireadonlyConst =69;
         public readonly int ParallelSide_1;
         private int _height;
-
+        private static DateTime _firstUsed = DateTime.Now;
         //public Trapezium():
         //    this(-5,10,13)
         //{
         //}
-
+        public static int CountOfInstances { get; private set; }
         public Trapezium(int p1, int p2, int h)
         {
             Yehaireadonly = 7;
@@ -21,6 +21,7 @@ namespace oops
             //width = GetLengthOrDefault(p2, nameof(Width));
             Width = p2;
             _height = GetLengthOrDefault(h, nameof(_height));
+            CountOfInstances++;
         }
         public int GetHeight() => _height;
         
@@ -67,7 +68,9 @@ namespace oops
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Trapezium.CountOfInstances);
             var trapezium = new Trapezium(19, 11,0);
+            Console.WriteLine(Trapezium.CountOfInstances);
             trapezium.SetHeight(17);
             //var trapezium = new Trapezium();
             var calculator = new ShapesMeasurementsCalculator();
