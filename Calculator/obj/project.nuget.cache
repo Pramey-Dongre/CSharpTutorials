@@ -1,20 +1,20 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "rpFEHYQmFeQ=",
-  "success": true,
-  "projectFilePath": "F:\\Training\\CSharpTutorials\\Calculator\\Calculator.csproj",
-  "expectedPackageFiles": [
-    "C:\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
-=======
-  "dgSpecHash": "9wY1lUZOAMf3h7nlg8LmdY3W0hgX3lQMSgAVf1ulMVAfCjzy1B7DfyjKxEh4sVuOX4D39y86LzPRe+G4CxzdTw==",
+  "dgSpecHash": "tutWTnbjVm0=",
   "success": true,
   "projectFilePath": "D:\\C#tuts\\gamer\\Calculator\\Calculator.csproj",
-  "expectedPackageFiles": [],
->>>>>>> Stashed changes
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\prame\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\prame\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\prame\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\prame\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\C#tuts\\gamer\\Calculator\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
