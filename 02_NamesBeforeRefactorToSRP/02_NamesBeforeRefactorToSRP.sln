@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_NamesBeforeRefactorToSRP", "02_NamesBeforeRefactorToSRP.csproj", "{B2F5F56B-9CBE-433F-88D7-D7303A83B0C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRollgame", "..\DiceRollgame\DiceRollgame.csproj", "{687F082B-0E1E-4311-927A-23DEF4A1E899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B2F5F56B-9CBE-433F-88D7-D7303A83B0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2F5F56B-9CBE-433F-88D7-D7303A83B0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2F5F56B-9CBE-433F-88D7-D7303A83B0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{687F082B-0E1E-4311-927A-23DEF4A1E899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687F082B-0E1E-4311-927A-23DEF4A1E899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687F082B-0E1E-4311-927A-23DEF4A1E899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687F082B-0E1E-4311-927A-23DEF4A1E899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
