@@ -4,21 +4,20 @@ using UserHere;
 namespace Game;
 public class GameInstance
 {
-    private int Tries { get; init; } = 3;
-    public void Start()
+    private int tries { get; init; } = 3;
+    public void StartGame(Dice dice,User user)
     {
-        Dice m = new Dice();
-        User u = new User();
+        Console.WriteLine("=====GAME BEGINS=====");
         int count = 0;
-        while (count != Tries)
+        while (count != tries)
         {
-            int userChoice = u.GetUserChoice();
+            int userChoice = user.GetUserChoice();
             if (userChoice == -1)
             {
                 continue;
             }
             else 
-            if (userChoice == m.RolledDice)
+            if (userChoice == dice.RolledDice)
             {
                 Console.WriteLine("You Win");
                 break;
@@ -29,7 +28,7 @@ public class GameInstance
             }
             count++;
         }
-        Console.WriteLine($"The Number was {m.RolledDice}");
+        Console.WriteLine($"You have exhausted {tries} tries. The Number was {dice.RolledDice}");
         Console.WriteLine("=====GAME OVER=====");
     }
 }

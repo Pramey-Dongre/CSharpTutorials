@@ -1,5 +1,5 @@
 ﻿namespace UserHere;
-class User
+public class User
 {
     public int UserChoice { get; set; }
 
@@ -10,7 +10,7 @@ class User
     public int GetUserChoice()
     {
         Console.WriteLine("Enter Your Choice: ");
-        string input = Console.ReadLine();
+        string? input = Console.ReadLine();
         if (int.TryParse(input, out int userInput))
         {
             if (userInput > 6 || userInput < 1) {
