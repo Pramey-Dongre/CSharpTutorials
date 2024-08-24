@@ -12,18 +12,42 @@
 //Ingredient ingredient = new Cheddar();
 //Console.WriteLine(ingredient.Name);
 
-List<Ingredient> ingredients = new List<Ingredient>
-{
-    new Cheddar(),
-    new TomatoSauce(),
-    new Mozzarella()
-};
-foreach(Ingredient ingredient in ingredients)
-{
-    Console.WriteLine(ingredient.Name);
-}
-Console.ReadKey();
+//List<Ingredient> ingredients = new List<Ingredient>
+//{
+//    new Cheddar(),
+//    new TomatoSauce(),
+//    new Mozzarella()
+//};
+//foreach(Ingredient ingredient in ingredients)
+//{
+//    Console.WriteLine(ingredient.Name);
+//}
+//Ingredient ingredient = new Cheddar();
+//Console.WriteLine($"is object? {ingredient is object}");
+//Console.WriteLine($"is Ingredient? {ingredient is Ingredient}");
+//Console.WriteLine($"is Cheddar? {ingredient is Cheddar}");
+//Console.WriteLine($"is TomatoSauce? {ingredient is TomatoSauce}");
+//Console.WriteLine($"is Mozzarella? {ingredient is Mozzarella}");
+//Ingredient randomIngredient = GenerateRandomIngredient();
+//Console.WriteLine($"Random ingredient is {randomIngredient}");
+//if (randomIngredient is Cheddar cheddar)
+//{
+//    Console.WriteLine("cheddar object: "+cheddar);
+//}
 
+Ingredient ingredient = GenerateRandomIngredient();
+Cheddar cheddar = ingredient as Cheddar;
+Console.WriteLine(cheddar.Name);
+
+Console.ReadKey();
+Ingredient GenerateRandomIngredient()
+{
+    var random = new Random();
+    var number = random.Next(1, 4);
+    if (number == 1) { return new Cheddar(2); }
+    if (number == 2) { return new TomatoSauce(4); }
+    return new Mozzarella(4);
+}
 public class Pizza
 {
     private List<Ingredient> _ingredients = new List<Ingredient>();
@@ -33,22 +57,50 @@ public class Pizza
     public string Describe() =>
         $"This is a pizza with {string.Join(", ", _ingredients)}";
 } 
-public class Ingredient
+public abstract class Ingredient
 {
+    public Ingredient(int priceIfExtraTopping)
+    {
+        PriceIfExtraTopping = priceIfExtraTopping;
+    }
+    public int PriceIfExtraTopping { get; }
+    public override string ToString() => Name;
+    public abstract void Prepare();
     public virtual string Name { get; } = "Some Ingredient";
 }
 public class Cheddar :Ingredient
 {
+    public Cheddar(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
     public override string Name => "Cheddar Cheese";
     public int AgedForMonths { get; }
+
+    public override void Prepare()
+    {
+        Console.WriteLine("Making cheddar");
+    }
 }
 public class TomatoSauce : Ingredient
 {
+    public TomatoSauce(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
     public string Name => "Tomato Sauce";
+    public override void Prepare()
+    {
+        Console.WriteLine("Making TOmato Soup");
+    }
     public int AgedForMonths { get; }
 }
 public class Mozzarella : Ingredient
 {
+    public Mozzarella(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
     public override string Name => "Mozarella";
     public int IsLight { get; }
     public string sgsg => "wsfgsgf";
@@ -57,5 +109,10 @@ public class Mozzarella : Ingredient
         sgsg.Substring(sgsg.Length/2);
         sgsg.ToUpper();
         return 0;
+    }
+
+    public override void Prepare()
+    {
+        Console.WriteLine("Dicinggggg");
     }
 }
