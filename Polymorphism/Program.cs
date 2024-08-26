@@ -1,4 +1,26 @@
-﻿//Pizza pizza = new Pizza();
+﻿using Polymorphism.Extesnions;
+var multiLineString = @"dsrfgrg
+ssdsd
+ssdsdv
+sdfsdvd
+dsfgerbh
+dsrfgbrebred
+dsfgbvregber
+dfbdb
+dfgbdfs
+sfdv
+
+
+";
+
+//int CountLines(string input) => input.Split(Environment.NewLine).Length;
+
+multiLineString.PrintStrings(); 
+Console.WriteLine("Count of Lines is: "+ multiLineString.CountLines());
+Console.WriteLine($"Next season after spring is {Season.Winter.NextSeason()}");
+
+
+//Pizza pizza = new Pizza();
 //pizza.AddIngredients(new Cheddar());
 //pizza.AddIngredients(new TomatoSauce());
 //pizza.AddIngredients(new Mozarella());
@@ -35,9 +57,9 @@
 //    Console.WriteLine("cheddar object: "+cheddar);
 //}
 
-Ingredient ingredient = GenerateRandomIngredient();
-Cheddar cheddar = ingredient as Cheddar;
-Console.WriteLine(cheddar.Name);
+//Ingredient ingredient = GenerateRandomIngredient();
+//Cheddar cheddar = ingredient as Cheddar;
+//Console.WriteLine(cheddar.Name);
 
 Console.ReadKey();
 Ingredient GenerateRandomIngredient()
@@ -89,13 +111,20 @@ public class TomatoSauce : Ingredient
         
     }
     public string Name => "Tomato Sauce";
-    public override void Prepare()
+    public sealed override void Prepare()
     {
         Console.WriteLine("Making TOmato Soup");
     }
     public int AgedForMonths { get; }
 }
-public class Mozzarella : Ingredient
+public class SpecialTomatoSauce : TomatoSauce
+{
+    public SpecialTomatoSauce(int priceIfExtraTopping) : base(priceIfExtraTopping)
+    {
+        
+    }
+}
+public sealed class Mozzarella : Ingredient
 {
     public Mozzarella(int priceIfExtraTopping) : base(priceIfExtraTopping)
     {
@@ -115,4 +144,15 @@ public class Mozzarella : Ingredient
     {
         Console.WriteLine("Dicinggggg");
     }
+}
+//public class SpecialMozzarella : Mozzarella
+//{
+
+//}
+public enum Season
+{
+    Spring,
+    Summer,
+    Autumn,
+    Winter
 }
