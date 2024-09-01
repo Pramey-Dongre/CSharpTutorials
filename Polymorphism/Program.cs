@@ -1,23 +1,42 @@
-﻿using Polymorphism.Extesnions;
-var multiLineString = @"dsrfgrg
-ssdsd
-ssdsdv
-sdfsdvd
-dsfgerbh
-dsrfgbrebred
-dsfgbvregber
-dfbdb
-dfgbdfs
-sfdv
+﻿using System.Text.Json;
+Person person = new Person();
+person.FirstName = "Ichigo";
+person.LastName = "Kurosaki";
+person.YearOfBirth = 2000;
+Console.WriteLine(person);
+string asJson = JsonSerializer.Serialize(person);
+Console.WriteLine(asJson);
+string personJson = "{\"FirstName\":\"Ichigo\",\"LastName\":\"Kurosaki\",\"YearOfBirth\":2000}";
+Person personFromJson = JsonSerializer.Deserialize<Person>(personJson);
+Console.WriteLine(personFromJson);
+Console.ReadKey();
+public class Person
+{
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int YearOfBirth { get; set; }
+    public override string ToString() => $"Name is {FirstName} {LastName} and year of Birth is {YearOfBirth}";
+}
+//using Polymorphism.Extesnions;
+//var multiLineString = @"dsrfgrg
+//ssdsd
+//ssdsdv
+//sdfsdvd
+//dsfgerbh
+//dsrfgbrebred
+//dsfgbvregber
+//dfbdb
+//dfgbdfs
+//sfdv
 
 
-";
+//";
 
 //int CountLines(string input) => input.Split(Environment.NewLine).Length;
 
-multiLineString.PrintStrings(); 
-Console.WriteLine("Count of Lines is: "+ multiLineString.CountLines());
-Console.WriteLine($"Next season after spring is {Season.Winter.NextSeason()}");
+//multiLineString.PrintStrings(); 
+//Console.WriteLine("Count of Lines is: "+ multiLineString.CountLines());
+//Console.WriteLine($"Next season after spring is {Season.Winter.NextSeason()}");
 
 
 //Pizza pizza = new Pizza();
@@ -61,15 +80,14 @@ Console.WriteLine($"Next season after spring is {Season.Winter.NextSeason()}");
 //Cheddar cheddar = ingredient as Cheddar;
 //Console.WriteLine(cheddar.Name);
 
-Console.ReadKey();
-Ingredient GenerateRandomIngredient()
-{
-    var random = new Random();
-    var number = random.Next(1, 4);
-    if (number == 1) { return new Cheddar(2); }
-    if (number == 2) { return new TomatoSauce(4); }
-    return new Mozzarella(4);
-}
+//Ingredient GenerateRandomIngredient()
+//{
+//    var random = new Random();
+//    var number = random.Next(1, 4);
+//    if (number == 1) { return new Cheddar(2); }
+//    if (number == 2) { return new TomatoSauce(4); }
+//    return new Mozzarella(4);
+//}
 public class Pizza
 {
     private List<Ingredient> _ingredients = new List<Ingredient>();
