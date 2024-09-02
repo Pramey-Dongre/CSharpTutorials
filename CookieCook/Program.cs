@@ -2,7 +2,7 @@
 
 var cookiesRecipesApp = new CookiesRecipesApp(
     new RecipesRepository(),
-    new RecipesUserConsoleInteraction());
+    new RecipesUserConsoleInteraction(new IngredientsRegister()));
 cookiesRecipesApp.Run("recipes.txt");
 public class CookiesRecipesApp
 {
@@ -17,7 +17,7 @@ public class CookiesRecipesApp
     {
         var allRecipes = _recipesRepository.Read(filePath);
         _recipesUserInteraction.PrintExistingRecipes(allRecipes);
-        //_recipesUserInteraction.PromptToCreateRecipe();
+        _recipesUserInteraction.PromptToCreateRecipe();
         //var ingredients = _recipesUserInteraction.ReadIngredientsFromUser();
         //if (ingredients.Count > 0)
         //{
@@ -47,4 +47,5 @@ public interface IRecipesUserInteraction
     void ShowMessage(string message);
     void Exit();
     void PrintExistingRecipes(IEnumerable<Recipe> allRecipes);
+    void PromptToCreateRecipe();
 }
