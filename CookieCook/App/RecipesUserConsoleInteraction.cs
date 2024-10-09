@@ -3,12 +3,12 @@ using CookieCook.Recipes.Ingredients;
 
 public class RecipesUserConsoleInteraction : IRecipesUserInteraction
 {
+    private readonly IIngredientsRegister _ingredientsRegister;
     public RecipesUserConsoleInteraction(
-        IngredientsRegister ingredientsRegister)
+        IIngredientsRegister ingredientsRegister)
     {
         _ingredientsRegister = ingredientsRegister;
     }
-    private readonly IngredientsRegister _ingredientsRegister;
     public void ShowMessage(string message) 
     {
         Console.WriteLine(message);
@@ -44,12 +44,44 @@ public class RecipesUserConsoleInteraction : IRecipesUserInteraction
             Console.WriteLine(ingredient);
         }
     }
+
+    public IEnumerable<Ingredient> ReadIngredientsFromUser()
+    {
+        bool shallStop = false;
+        List<Ingredient> ingredients = new List<Ingredient>();
+        while (!shallStop) 
+        {
+            Console.WriteLine("Add an ingredient by its ID, "+
+                "or type anything if finished");
+            var userInput = Console.ReadLine();
+            if(int.TryParse(userInput,out int id))
+            {
+                var selectedIngredient = _ingredientsRegister.GetById(id);
+                if (selectedIngredient != null) 
+                { 
+                ingredients.Add(selectedIngredient);
+                }
+            }
+            else
+            {
+                shallStop = true;
+            }
+        }
+        return ingredients;
+    }
 }
 
-public class IngredientsRegister
+public interface IIngredientsRegister
 {
-    public IEnumerable<Ingredient> All { get; }= new List<Ingredient>
-    { 
+    IEnumerable<Ingredient> All { get; }
+
+    Ingredient GetById(int id);
+}
+
+public class IngredientsRegister : IIngredientsRegister
+{
+    public IEnumerable<Ingredient> All { get; } = new List<Ingredient>
+    {
         new WheatFlour(),
         new SpeltFlour(),
         new Butter(),
@@ -58,5 +90,14 @@ public class IngredientsRegister
         new Cardamom(),
         new Cinnamon(),
         new CocoaPowder()
-    };    
+    };
+
+    public Ingredient GetById(int id)
+    {
+        foreach (var ingredient in All)
+        {
+            if (ingredient.Id == id) return ingredient;
+        }
+        return null;
+    }
 }
